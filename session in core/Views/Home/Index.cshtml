@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor httpContextAccessor
+<h1>==========session=========</h1>
+<h1>@httpContextAccessor.HttpContext.Session.GetString("sees")</h1>
